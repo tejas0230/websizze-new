@@ -42,10 +42,10 @@ export default function RootLayout({
           el: scrollContainerRef.current as HTMLElement,
           smooth: true,
           smartphone: {
-            smooth: true,
+            smooth: false,
           },
           tablet: {
-            smooth: true,
+            smooth: false,
             breakpoint: 1024, // Set breakpoint for tablet devices
           },
           getDirection: true,
