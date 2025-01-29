@@ -1,7 +1,7 @@
 "use client";
 import type { Metadata } from "next";
 import { Zain, Poppins, Whisper } from "next/font/google";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import "./globals.css";
 import Header from "./header";
@@ -9,12 +9,12 @@ import Footer from "./footer";
 
 const zain = Zain({
   subsets: ["latin"],
-  weight: ["300","400","700"],
+  weight: ["300", "400", "700"],
 });
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300","400", "700"],
+  weight: ["300", "400", "700"],
 });
 
 const whisper = Whisper({
@@ -22,7 +22,7 @@ const whisper = Whisper({
   weight: ["400"],
 });
 
-const metadata: Metadata = {
+export const metadata: Metadata = {
   title: "Websizze",
   description: "Elevate your brand identity with a custom and high-converting website",
 };
@@ -33,20 +33,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const [locomotiveScroll, setLocomotiveScroll] = useState<any>(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && scrollContainerRef.current) {
       import("locomotive-scroll").then((LocomotiveScroll) => {
-        const locomotiveScroll = new LocomotiveScroll.default({
+        const scrollInstance = new LocomotiveScroll.default({
           el: scrollContainerRef.current as HTMLElement,
           smooth: true,
+          smartphone: {
+            smooth: true,
+          },
+          tablet: {
+            smooth: true,
+            breakpoint: 1024, // Set breakpoint for tablet devices
+          },
           getDirection: true,
           multiplier: 1,
           lerp: 0.1,
         });
 
+        setLocomotiveScroll(scrollInstance);
+
         return () => {
-          locomotiveScroll.destroy();
+          scrollInstance.destroy();
         };
       });
     }
@@ -54,7 +64,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={` ${poppins.className} ${zain.className} ${whisper.className}antialiased main-scrollbar`}>
+      <body className={` ${poppins.className} ${zain.className} ${whisper.className} antialiased main-scrollbar`}>
         <div ref={scrollContainerRef} data-scroll-container>
           <Header />
           <div>{children}</div>
