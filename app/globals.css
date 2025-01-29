@@ -111,16 +111,3 @@ body {
   background-image: radial-gradient(circle 1500px at 50% -200%, #DB2B3957 0, transparent 50%);
   background-size: cover;
 }
-
-[data-scroll-container] {
-  overflow: hidden;
-}
-
-html, body {
-  overflow: hidden;
-  height: 100vh;
-}
-
-.main-scrollbar {
-  will-change: transform;
-}
