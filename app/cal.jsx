@@ -10,7 +10,7 @@ export default function CalCom() {
   }, [])
   return <Cal namespace="15min"
     calLink="tejas-websizze/15min"
-    style={{width:"100%",height:"100%",overflow:"scroll"}}
+    className="w-full h-[100%] overflow-scroll"
     config={{"layout":"month_view","theme":"dark"}}
     id="booking-link"
   />;

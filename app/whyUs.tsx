@@ -1,7 +1,7 @@
+"use client";
 import React from "react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Feature from "./feature";
+import { motion } from "motion/react";
 
 const featuresProps= [
     { title: "Optimized for Conversions", description: "A little touch of user psychology trick, can increase your conversions. We help you by optimizing these details." },
@@ -15,11 +15,12 @@ const featuresProps= [
 
 export default function WhyUs() {
     return (
-      <div className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1536px]  md:py-10 lg:py-[10px] justify-center mx-auto">
-        <div className="text-center text-xl md:text-4xl lg:text-6xl px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
-            Why <span className="text-[#DB2B39]">Us?</span>        
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[60px] lg:gap-x-[80px] gap-y-[20px] m-auto mt-4 sm:mt-10">
+      <div className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1234px]  md:py-10 lg:py-[10px] justify-center mx-auto">
+        <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
+        transition={{ ease: "easeOut", duration: 1 }} className="text-center font-light text-3xl md:text-4xl lg:text-5xl px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
+            Why <span className="text-[#DB2B39]">Us</span>?        
+        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[60px] lg:gap-x-[80px]  gap-y-[20px] md:gap-y-[100px] m-auto mt-4 sm:mt-10">
             {featuresProps.map((feature, index) => (
             <Feature key={index} title={feature.title} description={feature.description} />
             ))}
