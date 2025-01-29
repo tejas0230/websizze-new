@@ -54,7 +54,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${zain.className} antialiased main-scrollbar`}>
+      <body className={` ${poppins.className} ${zain.className} ${whisper.className}antialiased main-scrollbar`}>
         <div ref={scrollContainerRef} data-scroll-container>
           <Header />
           <div>{children}</div>

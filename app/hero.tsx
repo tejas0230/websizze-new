@@ -17,13 +17,13 @@ export default function Hero() {
             </div>
         </motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="text-center text-3xl md:text-6xl lg:text-7xl px-5 w-full max-w-[850px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
+        transition={{ ease: "easeOut", duration: 1 }} className="font-[zain] text-center text-3xl md:text-6xl lg:text-7xl px-5 w-full max-w-[850px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
             Elevate your brand identity with <span className="text-[#DB2B39]">custom</span> and <span className="text-[#DB2B39]">high-converting</span> website
         </motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="text-center font-light font-[poppins] text-sm md:text-base lg:text-lg px-5 w-full max-w-[950px] m-auto leading-[110%] lg:leading-[100%] font-normal mt-1 text-[#A6A6A6]">We craft engaging and budget-friendly websites for small to midsize businesses, driving meaningful online engagement and growth.</motion.div>
           <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="m-auto"> <Button className="mt-4 md:mt-8 font-light px-8 w-max mx-auto text-base md:text-base lg:text-base" >Book a 15-min call</Button></motion.div>
+        transition={{ ease: "easeOut", duration: 1 }} className="m-auto"> <Button className="font-[zain] mt-4 md:mt-8 font-light px-8 w-max mx-auto text-base md:text-base lg:text-base" >Book a 15-min call</Button></motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="mx-auto font-light text-center font-[poppins] text-sm mt-1">Fixed Prices. No Long-Term Contracts.</motion.div>
       </div>

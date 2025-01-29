@@ -10,7 +10,7 @@ export default function Pricing() {
     return(
         <div className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1536px] py-10 lg:py-[10px] justify-center mx-auto mt-1 md:mt-10 lg:mt-15 xl:mt-20">
             <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="text-center  text-3xl md:text-4xl lg:text-5xl font-light px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
+        transition={{ ease: "easeOut", duration: 1 }} className="font-[zain] text-center  text-3xl md:text-4xl lg:text-5xl font-light px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
                 Transparent <span className="text-[#DB2B39]">Pricing</span>?      
             </motion.div>
             <div className="flex flex-col gap-10 lg:flex-row m-auto md:gap-[60px] lg:gap-[120px] mt-10 px-2">
