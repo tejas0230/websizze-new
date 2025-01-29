@@ -22,7 +22,7 @@ const whisper = Whisper({
   weight: ["400"],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Websizze",
   description: "Elevate your brand identity with a custom and high-converting website",
 };
