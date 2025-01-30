@@ -20,7 +20,7 @@ export default function WhyUs() {
         transition={{ ease: "easeOut", duration: 1 }} className="font-[zain] text-center font-light text-3xl md:text-4xl lg:text-5xl px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
             Why <span className="text-[#DB2B39]">Us</span>?        
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[60px] lg:gap-x-[80px]  gap-y-[20px] md:gap-y-[100px] m-auto mt-4 sm:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-[60px] lg:gap-x-[80px]  gap-y-[60px] md:gap-y-[100px] m-auto mt-4 sm:mt-10">
             {featuresProps.map((feature, index) => (
             <Feature key={index} title={feature.title} description={feature.description} />
             ))}
