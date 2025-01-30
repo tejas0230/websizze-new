@@ -1,13 +1,13 @@
-"use client";
+// "use client";
 import type { Metadata } from "next";
 import { Zain, Poppins, Whisper } from "next/font/google";
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import "./globals.css";
 import Header from "./header";
 import Footer from "./footer";
-import Lenis from 'lenis';
-
+// import Lenis from 'lenis';
+import {ReactLenis} from './lenis';
 const zain = Zain({
   subsets: ["latin"],
   weight: ["300","400","700"],
@@ -34,16 +34,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  useEffect(()=>{
-    const lenis = new Lenis();
-    function raf(time:any){
-      lenis.raf(time);
-      requestAnimationFrame(raf)
-    }
-    requestAnimationFrame(raf)
-  },[]);
+  // useEffect(()=>{
+  //   const lenis = new Lenis();
+  //   function raf(time:any){
+  //     lenis.raf(time);
+  //     requestAnimationFrame(raf)
+  //   }
+  //   requestAnimationFrame(raf)
+  // },[]);
   return (
     <html lang="en">
+      <ReactLenis root>
       <body className={`${zain.className} ${poppins.className} ${whisper.className}antialiased main-scrollbar`}>
         <div>
           <Header />
@@ -51,6 +52,7 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      </ReactLenis>
     </html>
   );
 }

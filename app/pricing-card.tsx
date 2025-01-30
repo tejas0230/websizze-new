@@ -11,7 +11,13 @@ interface PricingProps {
 }
 
 const PricingCard: React.FC<PricingProps> = ({ planName, price, included,index }) => {
-    const a = "hero-bg";
+    const scrollToBooking = () => {
+        const bookingElement = document.getElementById("booking-link");
+        if (bookingElement) {
+          bookingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      };
+
     return (
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }}  className={`w-full sm:w-[400px] flex flex-col p-8 border-[0.1px] border-[#969696] rounded-xl hero-bg-${index}`}>
@@ -25,7 +31,7 @@ const PricingCard: React.FC<PricingProps> = ({ planName, price, included,index }
                     <li className="flex text-base items-center font-light font-[poppins] mt-1" key={index} ><FiCheck className="text-[#DB2B39] mr-2 text-xl" /> {item}</li>
                 ))}
             </ul>
-            <Button className="font-[zain] mt-4 w-full mx-auto text-sm md:text-base lg:text-lg font-light" >Book a 15-min call</Button>
+            <Button onClick={scrollToBooking} className="font-[zain] mt-4 w-full mx-auto text-sm md:text-base lg:text-lg font-light" >Book a 15-min call</Button>
         </motion.div>
     );
 };

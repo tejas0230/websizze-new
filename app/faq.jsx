@@ -11,15 +11,22 @@ import CalCom from './cal';
 
 import {motion} from "motion/react";
 export default function FAQ() {
+    const scrollToBooking = () => {
+        const bookingElement = document.getElementById("booking-link");
+        if (bookingElement) {
+          bookingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      };
+
     return (
-      <div className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1536px] py-4 justify-center m-auto mt-0 lg:mt-20 h-[1000px]">
+      <div id="faq" className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1536px] py-4 justify-center m-auto mt-0 lg:mt-20 h-[1000px]">
             <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }}  className="font-[zain] text-center  text-3xl md:text-4xl lg:text-5xl font-light px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
                 Ready to <span className="text-[#DB2B39]">grow</span> your business? Have <span className="text-[#DB2B39]">questions</span>?         
             </motion.div>
             <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="m-auto">
-            <Button className="font-[zain] w-max m-auto mt-5 px-10 text-lg font-light">Book a 15-min call</Button>
+            <Button onClick={scrollToBooking} className="font-[zain] w-max m-auto mt-5 px-10 text-lg font-light">Book a 15-min call</Button>
             </motion.div>
             <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="m-auto w-full lg:w-1/2">

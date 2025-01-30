@@ -16,7 +16,7 @@ export default function Footer() {
               <a href=""><ImLinkedin2 className="size-6"/></a>
               <a href=""><ImTwitter className="size-6"/></a>
             </div>
-            <div className="font-[poppins] text-[14px] text-[#A4A4A4] font-light">team@websizze.com</div>
+            <div className="font-[poppins] text-[14px] text-[#A4A4A4] font-light">admin@websizze.com</div>
           </div>
         </div>
         <div className="border border-[#323232] w-full xl:w-[1024px] 2xl:w-[1280px] m-auto"></div>

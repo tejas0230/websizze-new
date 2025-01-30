@@ -4,11 +4,18 @@ import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 
 export default function Hero() {
+  const scrollToBooking = () => {
+    const bookingElement = document.getElementById("booking-link");
+    if (bookingElement) {
+      bookingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
     return (
       <div className="flex flex-col w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1536px] py-10 lg:py-[140px] justify-center mx-auto">
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} 
-          className="relative rotate-2 m-auto text-xl sm:text-3xl lg:text-4xl">
+          className="relative  m-auto text-xl sm:text-3xl lg:text-4xl">
             <div className="font-[Whisper]  relative z-10 ">
                 Is your brand struggling to convert potential clients?
             </div>
@@ -23,7 +30,7 @@ export default function Hero() {
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="text-center font-light font-[poppins] text-sm md:text-base lg:text-lg px-5 w-full max-w-[950px] m-auto leading-[110%] lg:leading-[100%] font-normal mt-1 text-[#A6A6A6]">We craft engaging and budget-friendly websites for small to midsize businesses, driving meaningful online engagement and growth.</motion.div>
           <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="m-auto"> <Button className="font-[zain] mt-4 md:mt-8 font-light px-8 w-max mx-auto text-base md:text-base lg:text-base" >Book a 15-min call</Button></motion.div>
+        transition={{ ease: "easeOut", duration: 1 }} className="m-auto"> <Button onClick={scrollToBooking} className="font-[zain] mt-4 md:mt-8 font-light px-8 w-max mx-auto text-base md:text-base lg:text-base" >Book a 15-min call</Button></motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="mx-auto font-light text-center font-[poppins] text-sm mt-1">Fixed Prices. No Long-Term Contracts.</motion.div>
       </div>
