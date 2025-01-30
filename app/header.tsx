@@ -11,6 +11,12 @@ export default function Header() {
       bookingElement.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+  const scrollToFaq = () => {
+    const bookingElement = document.getElementById("faq");
+    if (bookingElement) {
+      bookingElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
     return (
       <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
@@ -20,7 +26,7 @@ export default function Header() {
             <div className="flex w-max justify-between content-center gap-0 md:gap-10 text-lg font-light">
                 <Link href="/" className="font-[zain] hidden md:block self-center">Home</Link>
                 {/* <Link href="/our work" className="font-[zain] hidden md:block self-center">Our Work</Link> */}
-                <Link href="#faq" className="font-[zain] hidden md:block self-center">FAQ</Link>
+                <Link onClick={scrollToFaq} href={"#"} className="font-[zain] hidden md:block self-center">FAQ</Link>
                 <Button onClick={scrollToBooking} className="font-[zain] font-light text-base md:text-lg">Book a 15-min call</Button>
             </div>
         </div>

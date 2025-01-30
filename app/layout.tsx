@@ -23,8 +23,8 @@ const whisper = Whisper({
   weight: ["400"],
 });
 
-const metadata: Metadata = {
-  title: "Websizze",
+export const metadata: Metadata = {
+  title: "Websizze.com",
   description: "Elevate your brand identity with a custom and high-converting website",
 };
 
@@ -33,15 +33,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  // useEffect(()=>{
-  //   const lenis = new Lenis();
-  //   function raf(time:any){
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf)
-  //   }
-  //   requestAnimationFrame(raf)
-  // },[]);
   return (
     <html lang="en">
       <ReactLenis root>
