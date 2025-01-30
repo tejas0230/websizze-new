@@ -28,11 +28,11 @@ export default function Hero() {
             Elevate your brand identity with <span className="text-[#DB2B39]">custom</span> and <span className="text-[#DB2B39]">high-converting</span> website
         </motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="text-center font-light font-[poppins] text-sm md:text-base lg:text-lg px-5 w-full max-w-[950px] m-auto leading-[120%] lg:leading-[100%] font-normal mt-1 text-[#A6A6A6]">We craft engaging and budget-friendly websites for small to midsize businesses, driving meaningful online engagement and growth.</motion.div>
+        transition={{ ease: "easeOut", duration: 1 }} className="text-center font-light font-[poppins] text-sm md:text-base lg:text-lg px-5 w-full max-w-[950px] m-auto leading-[120%] lg:leading-[100%] font-light mt-1 text-[#CDCDCD]">We craft engaging and budget-friendly websites for small to midsize businesses, driving meaningful online engagement and growth.</motion.div>
           <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
         transition={{ ease: "easeOut", duration: 1 }} className="m-auto"> <Button onClick={scrollToBooking} className="font-[zain] mt-4 md:mt-8 font-light px-8 w-max mx-auto text-base md:text-base lg:text-base" >Book a 15-min call</Button></motion.div>
         <motion.div initial={{opacity:0, y:10}} whileInView={{ opacity: 1,y:0 }} viewport={{ once: true }}
-        transition={{ ease: "easeOut", duration: 1 }} className="mx-auto font-light text-center font-[poppins] text-sm mt-1">Fixed Prices. No Long-Term Contracts.</motion.div>
+        transition={{ ease: "easeOut", duration: 1 }} className="mx-auto font-light text-center font-[poppins] text-[#E8F9FD] text-xs mt-1">Fixed Prices. No Long-Term Contracts.</motion.div>
       </div>
     );
   }

@@ -8,6 +8,7 @@ import Header from "./header";
 import Footer from "./footer";
 // import Lenis from 'lenis';
 import {ReactLenis} from './lenis';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const zain = Zain({
   subsets: ["latin"],
   weight: ["300","400","700"],
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <ReactLenis root>
       <body className={`${zain.className} ${poppins.className} ${whisper.className}antialiased main-scrollbar`}>
+      <SpeedInsights />
         <div>
           <Header />
           <div>{children}</div>

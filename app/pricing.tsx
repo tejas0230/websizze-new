@@ -13,7 +13,7 @@ export default function Pricing() {
         transition={{ ease: "easeOut", duration: 1 }} className="font-[zain] text-center  text-3xl md:text-4xl lg:text-5xl font-light px-5 w-full max-w-[1100px] mx-auto mt-2 lg:mt-6 leading-[70%] md:leading-[70%] lg:leading-[70%] tracking-tighter">
                 Transparent <span className="text-[#DB2B39]">Pricing</span>?      
             </motion.div>
-            <div className="flex flex-col gap-10 lg:flex-row m-auto md:gap-[60px] lg:gap-[120px] mt-10 px-2">
+            <div className="flex flex-col gap-10 lg:flex-row m-auto md:gap-[60px] lg:gap-[120px] mt-10 px-6">
                 {
                     PricingProps.map((item,index)=>(
                         <PricingCard key={index} planName={item.planName} price={item.price.toString()} included={item.included} index={index+1}/>
