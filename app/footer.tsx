@@ -12,9 +12,9 @@ export default function Footer() {
           <div className="flex flex-col gap-y-2">
             <div className="font-[Poppins] text-[16px] md:text-[20px] font-light">Connect</div>
             <div className="flex gap-4 text-[#838383]">
-              <a href=""><ImInstagram className="size-6"/></a>
-              <a href=""><ImLinkedin2 className="size-6"/></a>
-              <a href=""><ImTwitter className="size-6"/></a>
+              <a href="https://www.instagram.com/websizzew/"><ImInstagram className="size-6"/></a>
+              <a href="https://www.linkedin.com/in/websizze-582469325/"><ImLinkedin2 className="size-6"/></a>
+              {/* <a href=""><ImTwitter className="size-6"/></a> */}
             </div>
             <div className="font-[poppins] text-[14px] text-[#A4A4A4] font-light">admin@websizze.com</div>
           </div>
