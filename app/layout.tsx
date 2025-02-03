@@ -9,6 +9,7 @@ import Footer from "./footer";
 // import Lenis from 'lenis';
 import {ReactLenis} from './lenis';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 const zain = Zain({
   subsets: ["latin"],
   weight: ["300","400","700"],
