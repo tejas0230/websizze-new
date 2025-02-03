@@ -40,6 +40,7 @@ export default function RootLayout({
       <ReactLenis root>
       <body className={`${zain.className} ${poppins.className} ${whisper.className}antialiased main-scrollbar`}>
       <SpeedInsights />
+      <Analytics/>
         <div>
           <Header />
           <div>{children}</div>
