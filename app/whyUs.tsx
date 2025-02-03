@@ -7,7 +7,7 @@ const featuresProps= [
     { title: "Optimized for Conversions", description: "A little touch of user psychology trick, can increase your conversions. We help you by optimizing these details." },
     { title: "Custom Website", description: "Uniqueness is essential for brand identity. Hence, we don’t use templates and make custom designs catered to you brand." },
     { title: "User Focused", description: "Your site will have the highest form of user-experience." },
-    { title: "Mobile Optimized", description: "Most of the internet users surf on mobile devices. We make sure that your don’t miss out on potential customers." },
+    { title: "Mobile Optimized", description: "Most of the internet users surf on mobile devices. We make sure that you don’t miss out on potential customers." },
     { title: "Speed Optimized", description: "Customers hate to wait. We make sure that you don’t lose any customer to slow site speed." },
     { title: "Search Engine Optimized", description: "Your site will be SEO optimized to rank it over your competitors." },
   ];
