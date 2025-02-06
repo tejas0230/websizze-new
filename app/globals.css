@@ -103,6 +103,11 @@ body {
 }
 
 .hero-bg-3{
+  background-image: radial-gradient(circle 700px at 100% 100%, #DB2B3957 0, transparent 50%);
+  background-size: cover;
+}
+
+.hero-bg-5{
   background-image: radial-gradient(circle 700px at 50% 0, #DB2B3957 0, transparent 50%);
   background-size: cover;
 }
