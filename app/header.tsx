@@ -27,6 +27,7 @@ export default function Header() {
                 <Link href="/" className="font-[zain] hidden md:block self-center">Home</Link>
                 {/* <Link href="/our work" className="font-[zain] hidden md:block self-center">Our Work</Link> */}
                 <Link onClick={scrollToFaq} href={"#"} className="font-[zain] hidden md:block self-center">FAQ</Link>
+                <Link href={"/blogs"} className="font-[zain] hidden md:block self-center">Blogs</Link>
                 <Button onClick={scrollToBooking} className="font-[zain] font-light text-base md:text-lg">Book a 15-min call</Button>
             </div>
         </div>

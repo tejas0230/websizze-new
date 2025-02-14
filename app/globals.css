@@ -116,3 +116,126 @@ body {
   background-image: radial-gradient(circle 1500px at 50% -200%, #DB2B3957 0, transparent 50%);
   background-size: cover;
 }
+
+.prose {
+  @apply text-gray-800 dark:text-gray-200 max-w-none leading-relaxed;
+}
+
+/* Headings */
+.prose h1 {
+  font-size: 96px;
+  font-weight: 400;
+  font-family: 'Zain';
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  /* @apply text-4xl font-bold text-gray-900 dark:text-white; */
+}
+.prose h2 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Zain';
+  color: white;
+  line-height: 80px;
+}
+.prose h3 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: 'Zain';
+  color: white;
+  line-height: 80px;
+}
+.prose h4 {
+  @apply text-xl font-medium text-gray-700 dark:text-gray-300 mt-4;
+}
+.prose h5 {
+  @apply text-lg font-medium text-gray-600 dark:text-gray-400;
+}
+.prose h6 {
+  @apply text-base font-medium text-gray-500 dark:text-gray-500;
+}
+
+/* Paragraphs */
+.prose p {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* Links */
+.prose a {
+  @apply text-blue-600 dark:text-blue-400 underline font-medium hover:text-blue-800 dark:hover:text-blue-300;
+}
+
+/* Lists */
+.prose ul {
+  @apply list-disc list-outside ml-5 text-lg space-y-2;
+}
+.prose ol {
+  @apply list-decimal list-outside ml-5 text-lg space-y-2;
+}
+.prose li {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* Blockquotes */
+.prose blockquote {
+  @apply border-l-4 border-gray-400 dark:border-gray-600 pl-4 italic text-gray-600 dark:text-gray-400 my-6;
+}
+
+/* Code Blocks */
+.prose pre {
+  @apply bg-gray-900 text-gray-100 p-4 rounded-md overflow-x-auto text-sm;
+}
+.prose code {
+  @apply bg-gray-100 dark:bg-gray-800 text-red-600 dark:text-red-400 px-2 py-1 rounded;
+}
+
+/* Images */
+.prose img {
+  @apply rounded-md shadow-lg mx-auto;
+}
+
+/* Tables */
+.prose table {
+  @apply w-full border-collapse border border-gray-300 dark:border-gray-700;
+}
+.prose th {
+  @apply bg-gray-100 dark:bg-gray-800 text-left px-4 py-2 border border-gray-300 dark:border-gray-700;
+}
+.prose td {
+  @apply px-4 py-2 border border-gray-300 dark:border-gray-700;
+}
+.prose tr:nth-child(even) {
+  @apply bg-gray-50 dark:bg-gray-900;
+}
+
+/* Horizontal Rules */
+.prose hr {
+  @apply border-t border-gray-300 dark:border-gray-700 my-8;
+}
+
+/* Strong & Italics */
+.prose strong {
+  color: white;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+}
+.prose em {
+  @apply italic text-gray-700 dark:text-gray-300;
+}
+
+/* Inline Code */
+.prose code {
+  @apply bg-gray-200 dark:bg-gray-800 text-sm px-1 py-0.5 rounded;
+}
+
+/* Captions */
+.prose figcaption {
+  @apply text-sm text-gray-500 dark:text-gray-400 text-center mt-2;
+}
