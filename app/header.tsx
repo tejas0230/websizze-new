@@ -25,7 +25,7 @@ export default function Header() {
             <Link href="/" className="font-[zain] self-center text-2xl font-light">Websizze</Link>
             <div className="flex w-max justify-between content-center gap-0 md:gap-10 text-lg font-light">
                 <Link href="/" className="font-[zain] hidden md:block self-center">Home</Link>
-                {/* <Link href="/our work" className="font-[zain] hidden md:block self-center">Our Work</Link> */}
+                <Link href="/portfolio" className="font-[zain] hidden md:block self-center">Our Work</Link>
                 <Link onClick={scrollToFaq} href={"#"} className="font-[zain] hidden md:block self-center">FAQ</Link>
                 <Button onClick={scrollToBooking} className="font-[zain] font-light text-base md:text-lg">Book a 15-min call</Button>
             </div>
