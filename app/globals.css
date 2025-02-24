@@ -131,6 +131,7 @@ body {
   line-height: 80px;
   /* @apply text-4xl font-bold text-gray-900 dark:text-white; */
 }
+
 .prose h2 {
   font-size: 48px;
   font-weight: 400;
@@ -239,3 +240,86 @@ body {
 .prose figcaption {
   @apply text-sm text-gray-500 dark:text-gray-400 text-center mt-2;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .prose h1 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    /* @apply text-4xl font-bold text-gray-900 dark:text-white; */
+  }
+  .prose h2 {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767) {
+  .prose h1 {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    text-align: center;
+    line-height: 54px;
+    /* @apply text-4xl font-bold text-gray-900 dark:text-white; */
+  }
+  .prose h2 {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 639) {
+  .prose h1 {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    /* @apply text-4xl font-bold text-gray-900 dark:text-white; */
+  }
+  .prose p {
+    color: white;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .prose h2 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    line-height: 30px;
+  }
+  .prose li {
+    color: white;
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .prose strong {
+    color: white;
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .prose h3 {
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Zain';
+    color: white;
+    line-height: 30px;
+  }
+}
+
