@@ -1,4 +1,4 @@
-October 5,2025 {#identifier .heading1}
+October 5,2025
 
 # Custom vs. Template: Why Websizze Wins for SEO
 

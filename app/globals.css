@@ -161,7 +161,7 @@ body {
   color: white;
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Links */
@@ -180,7 +180,7 @@ body {
   color: white;
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* Blockquotes */
@@ -224,7 +224,7 @@ body {
 .prose strong {
   color: white;
   font-family: "Poppins";
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 .prose em {
@@ -293,7 +293,7 @@ body {
     color: white;
     font-family: "Poppins";
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
   }
   .prose h2 {
     font-size: 28px;
@@ -306,12 +306,12 @@ body {
     color: white;
     font-family: "Poppins";
     font-weight: 300;
-    font-size: 12px;
+    font-size: 14px;
   }
   .prose strong {
     color: white;
     font-family: "Poppins";
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
   .prose h3 {

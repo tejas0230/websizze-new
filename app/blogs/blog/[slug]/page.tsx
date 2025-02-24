@@ -28,7 +28,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
   return (
     <div>
       <div className="w-1/2 h-[1232px] bg-[#DB2B3950] rounded-[800px] blur-[400px] fixed inset-x-[25%] top-[-20%] z-[-1] absolute"></div>
-      <div className="flex flex-col w-[330px] sm:w-[560px] md:w-[650px] lg:w-[900px] xl:w-[980px] 2xl:w-[1036px] py-10 lg:py-[140px] justify-center mx-auto">
+      <div className="flex flex-col w-[360px] sm:w-[560px] md:w-[650px] lg:w-[900px] xl:w-[980px] 2xl:w-[1036px] py-10 lg:py-[140px] justify-center mx-auto">
 
         <article className="prose prose-lg prose-stone dark:prose-invert">
           <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
